@@ -1,0 +1,88 @@
+# cafe_robot/config/navigation.rviz
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1/Frames1
+        - /TF1/Tree1
+        - /Global Planner1
+        - /Local Planner1
+      Splitter Ratio: 0.5
+    Tree Height: 719
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Name: Grid
+      Normal Cell Count: 0
+      Plane: XY
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Name: TF
+      Frames:
+        All Enabled: false
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
+      Tree:
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                All Other Frames
+    - Alpha: 0.7
+      Class: rviz_default_plugins/Map
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Value: true
+    - Alpha: 1.0
+      Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Topic: /robot_description
+      Unreliable: false
+      Value: true
+    - Alpha: 1.0
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/LaserScan
+      Name: LaserScan
+      Topic: /scan
+      Unreliable: false
+      Value: true
+    - Alpha: 1.0
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Name: Global Planner
+      Topic: /plan
+      Unreliable: false
+      Value: true
+    - Alpha: 1.0
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Name: Local Planner
+      Topic: /local_plan
+      Unreliable: false
+      Value: true
+    - Alpha: 0.3
+      Class: rviz_default_plugins/Map
+      Name: Local Costmap
+      Topic: /local_costmap/costmap
+      Unreliable: false
+      Value: true
+    - Alpha: 0.3
+      Class: rviz_default_plugins/Map
+      Name: Global Costmap
+      Topic: /global_costmap/costmap
+      Unreliable: false
+      Value: true

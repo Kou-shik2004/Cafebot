@@ -61,7 +61,7 @@ def generate_launch_description():
     )
 
     # Define the RViz2 node
-    rviz_config_file = os.path.join(pkg_dir, 'rviz', 'cafebot.rviz')
+    rviz_config_file = os.path.join(pkg_dir, 'rviz', 'new.rviz')
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',

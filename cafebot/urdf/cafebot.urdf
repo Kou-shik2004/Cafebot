@@ -183,9 +183,9 @@
       <origin xyz="0 0 0.4"/>
     </collision>
     <inertial>
-      <mass value="5.0"/>
+      <mass value="3.0"/>
       <origin xyz="0 0 0.4"/>
-      <inertia ixx="0.5" ixy="0" ixz="0" iyy="0.5" iyz="0" izz="0.2"/>
+      <inertia ixx="0.2" ixy="0" ixz="0" iyy="0.2" iyz="0" izz="0.1"/>
     </inertial>
   </link>
 
@@ -375,10 +375,10 @@
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
       <!-- kinematics -->
-      <wheel_separation>0.55</wheel_separation>
+      <wheel_separation>0.545</wheel_separation>
       <wheel_diameter>0.16</wheel_diameter>
       <!-- limits -->
-      <max_wheel_torque>200</max_wheel_torque>
+      <max_wheel_torque>100</max_wheel_torque>
       <max_wheel_acceleration>2.0</max_wheel_acceleration>
       <!-- output -->
       <publish_odom>true</publish_odom>
@@ -503,14 +503,14 @@
   </gazebo>
 
   <gazebo reference="front_caster">
-    <mu1>0.04</mu1>
-    <mu2>0.04</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
     <selfCollide>true</selfCollide>
   </gazebo>
 
   <gazebo reference="rear_caster">
-    <mu1>0.04</mu1>
-    <mu2>0.04</mu2>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
     <selfCollide>true</selfCollide>
   </gazebo>
 
