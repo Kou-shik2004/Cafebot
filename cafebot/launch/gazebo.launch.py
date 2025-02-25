@@ -93,7 +93,7 @@ def generate_launch_description():
         declare_use_sim_time_cmd,
         declare_world_file_cmd,
         gazebo,
-        robot_state_publisher_node,
+        #robot_state_publisher_node,
         spawn_entity,
-        rviz_node
+        #rviz_node
     ])
